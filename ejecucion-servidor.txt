@@ -1,1 +1,30 @@
+1. ¿Qué ocurre cuando ejecutas 'node server.js'?
+----------------------------------------------------------------------
+- El entorno de ejecución de Node.js carga y lee el archivo 'server.js'.
+- Se compila el código JavaScript a lenguaje máquina en tiempo real.
+- Se levanta un proceso en el sistema operativo.
+- El servidor empieza a escuchar peticiones en un puerto específico.
+- El proceso se queda activo (en bucle) esperando conexiones.
 
+
+2. ¿Qué mensaje aparece en la terminal?
+----------------------------------------------------------------------
+- Depende estrictamente del código programado dentro de 'server.js'.
+- Por estándar, suele mostrar un mensaje de confirmación impreso con 
+  'console.log()'.
+- Ejemplo común: "Servidor corriendo en el puerto 3000" o "Server 
+  listening on port 8080".
+- Si hay un error de sintaxis o el puerto está ocupado, aparecerá un 
+  mensaje de error (stack trace) y el proceso se detendrá.
+
+
+3. ¿Qué sucede cuando visitas la ruta '/estado'?
+----------------------------------------------------------------------
+- El navegador web o cliente (como Postman o cURL) envía una petición 
+  HTTP GET al servidor.
+- El código de Node.js intercepta la ruta específica '/estado' mediante 
+  su enrutador.
+- La función asociada (callback) procesa la solicitud entrante.
+- El servidor responde al cliente, usualmente devolviendo un texto o 
+  un objeto JSON con el estado actual de la aplicación (ej. {"status":
+- El navegador web renderiza y muestra esa respuesta en la pantalla.
