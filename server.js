@@ -15,3 +15,4 @@ app.get('/estado', (req, res) => {
 app.listen(3000, () => {
   console.log('Servidor ejecutándose en puerto 3000');
 })
+node server.js
